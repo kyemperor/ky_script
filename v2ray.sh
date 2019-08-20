@@ -1,4 +1,6 @@
 #!/bin/bash
+while true
+do
 echo -e "
 请选择您需要的功能：
 1.安装v2ray。
@@ -233,3 +235,4 @@ exit
 echo "输入错误！"
 ;;
 esac
+done
