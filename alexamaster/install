@@ -1,5 +1,8 @@
 #!/bin/sh
+cd ~
 rm ./vncam.sh
+echo "0">addtime
+chmod 777 addtime
 wget https://github.com/kyemperor/ky_script/raw/master/alexamaster/vncam.sh
 sudo sh vncam.sh
 wget https://github.com/kyemperor/ky_script/raw/master/alexamaster/mon.sh
