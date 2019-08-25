@@ -2,6 +2,8 @@
 rm ./vncam.sh
 wget https://github.com/kyemperor/ky_script/raw/master/alexamaster/vncam.sh
 sudo sh vncam.sh
+wget https://github.com/kyemperor/ky_script/raw/master/alexamaster/mon.sh
+chmod a+x mon.sh
 grep -r 'Master'
 echo "good!"
 #reboot
