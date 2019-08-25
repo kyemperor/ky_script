@@ -1,0 +1,7 @@
+#!/bin/sh
+rm ./vncam.sh
+wget https://github.com/kyemperor/ky_script/raw/master/vncam.sh
+sudo sh vncam.sh
+grep -r 'Master'
+echo "good!"
+#reboot
