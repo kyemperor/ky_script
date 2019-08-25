@@ -10,7 +10,7 @@ addtime=`cat /root/addtime`
 if [ $addtime -ge 4 ]
 then
  echo '12-minutes is here.'>>/root/mon.log
-killall firefox
+pkill firefox
  echo 'killall firefox'>>/root/mon.log
 sleep 3
  export DISPLAY=localhost:1 && firefox --profile ~/.alexa/alexa --new-tab 'https://www.alexamaster.net/Master/132997' &
