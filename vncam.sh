@@ -20,7 +20,7 @@ while [[ $# -ge 1 ]]; do
   done
 
 surflink='https://www.alexamaster.net/Master/132997'
-passwordlink='xiaofd.github.io/others/passwd'
+passwordlink='https://github.com/kyemperor/ky_script/raw/master/passwd'
 [ -n "$surflinktmp" ] && surflink=$surflinktmp
 [ -n "$passwordlinktmp" ] && passwordlink=$passwordlinktmp
 echo 'your alexamaster surflink is ...'$surflink
