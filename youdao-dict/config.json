@@ -32,11 +32,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.kyserch.top",
-            "port": 18888,
+            "address": "",
+            "port": ,
             "users": [
               {
-                "id": "c4458a85-9dcb-4721-8786-701c18ccffb7",
+                "id": "",
                 "alterId": 64,
                 "email": "t@t.tt",
                 "security": "auto"
