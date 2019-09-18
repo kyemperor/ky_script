@@ -1,3 +1,8 @@
+ky:
+该脚本存在一些bug。
+已知：当ssh配置的服务器超过约10个，列表显示就会出现错误。未修复
+
+
 # GotoSSH
 
 - [English Version](#english)
