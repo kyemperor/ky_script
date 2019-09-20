@@ -36,7 +36,7 @@ sudo wget https://install.direct/go.sh && sudo chmod a+x ./go.sh && sudo bash ./
 编辑 /etc/v2ray/config.json 文件来配置你需要的代理方式；
 运行 service v2ray start 来启动 V2Ray 进程；
 之后可以使用 service v2ray start|stop|status|reload|restart|force-reload 控制 V2Ray 的运行。"
-exit
+
 ;;
 2)
 sudo wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && sudo chmod +x bbr.sh &&sudo bash ./bbr.sh && echo -e "\n成功安装BBR。"
