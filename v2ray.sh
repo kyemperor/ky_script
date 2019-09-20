@@ -66,6 +66,45 @@ fi
 ;;
 8)
 echo "功能未实现"
+echo  '{
+  "inbounds": [{
+    "port": 10044,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "10e9df18-66c1-47cc-a019-43089ae6038f",
+          "level": 1,
+          "alterId": 64
+        }
+      ]
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}'>./a.v2 && sudo mv /etc/v2ray/config.json /etc/v2ray/config.json.bak && sudo mv ./a.v2 /etc/v2ray/config.json && sudo systemctl restart v2ray || echo '出现错误，请自行检查！'
+
+
+
+
+
+
+
 ;;
 
 
