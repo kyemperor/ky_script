@@ -10,7 +10,7 @@ echo -e "
 5.使用systemctl停止v2ray。
 6.使用systemctl重启v2ray。
 7.指定config文件，然后重启v2ray。
-8.写入新的config文件到当前目录下。
+8.写入新的config文件到配置中，并重启v2ray。
 bbr.测试BBR是否成功安装。
 q.退出。
 
@@ -65,10 +65,11 @@ echo "这不是有效文件！"
 fi
 ;;
 8)
-echo "功能未实现"
+echo "正在使用通用config。"
 echo  '{
   "inbounds": [{
     "port": 10044,
+    "listen":"0.0.0.0",
     "protocol": "vmess",
     "settings": {
       "clients": [
@@ -97,7 +98,7 @@ echo  '{
       }
     ]
   }
-}'>./a.v2 && sudo mv /etc/v2ray/config.json /etc/v2ray/config.json.bak && sudo mv ./a.v2 /etc/v2ray/config.json && sudo systemctl restart v2ray || echo '出现错误，请自行检查！'
+}'>./a.v2 && sudo mv /etc/v2ray/config.json /etc/v2ray/config.json.bak && sudo mv ./a.v2 /etc/v2ray/config.json && sudo systemctl restart v2ray && echo '已经替换config并重启v2ray!' || echo '出现错误，请自行检查！'
 
 
 
