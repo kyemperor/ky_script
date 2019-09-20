@@ -18,7 +18,7 @@ q.退出。
 read choice
 case $choice in
 1)
-sudo wget https://install.direct/go.sh && sudo bash ./go.sh && echo -e "\成功安装v2ray！" && echo -e "
+sudo wget https://install.direct/go.sh && sudo chmod a+x ./go.sh && sudo bash ./go.sh && echo -e "\成功安装v2ray！" && echo -e "
 此脚本会自动安装以下文件：
 
 /usr/bin/v2ray/v2ray：V2Ray 程序；
